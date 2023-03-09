@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- 	Student Name: Kenneth Fisher
+		File Name: template.html
+		Date: 03/08/22
+-->
+<!-- This website template was created by: Kenneth Fisher -->
+<html lang ="en">
+<head>
+	<title>Contact Us - Pleasure Island, NC</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Kanit:wght@300&family=Noto+Serif:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="container">
+        <!-- Use the header area for the website name or logo -->
+        <header>
+            <img class="hero" src="images/banner.jpg" alt="beautiful sunset">
+            <h1>Pleasure Island, North Carolina</h1>
+        </header>
+        
+        <!-- This is the nav for the hamburger menu. -->
+    
+            <input id="mobile_menu" type="checkbox">
+            
+            <nav >
+                <label for="mobile_menu"> </label>
+                <div>                    
+                    <a href="index.html">Home</a>
+                    <a href="carolina-beach.html">Carolina Beach</a>
+                    <a href="kure-beach.html">Kure Beach</a>
+                    <a href="fort-fisher.html">Historic Fort Fisher</a>
+                    <a href="contacts.html">Contacts</a>
+                </div>
+            </nav>   
+            
+        <!-- Use the main area to add the main content of the webpage -->
+    <main>
+            <section class="contactcontent1">
+                <h2>For More Information About Pleasure Island.</h2>
+                <p>Thank your for showing interest in the North Carolina Pleasure Island area.  We have a lot of you to do around here that you'll never have a chance to grow bored.  Feel free to drop us a comment, send us an email, or give us a call for additional information or to answer any of your questions. </p>
+                <h3>We are located at:</h3>
+                <p class="address">1121 N. Lake Park Blvd</p>
+                <p class="address">Carolina Beach, NC  28428</p>
+                <a href="tel:9104588434" class="phone">(910) 458 - 8434</a>
+                <p>Please feel free to contact us with this form:</p>
+            </section>
+
+            <section class="contactcontent2">
+                <!-- This is the section for name and phone entry.-->
+                <h2>Contact Form</h2>
+                <form id="contactform" action="#" method="post">
+                    <section class="contacts">
+                        <fieldset>
+                            <legend>Name and Phone Number</legend>
+                            <ul>
+                                <li>
+                                    <label for="name"> Full Name: </label>
+                                    <input type="text" id="name" name="name">
+                                </li>
+                                <li>
+                                    <label for="phone"> Phone: </label>
+                                    <input type="text" id="phone" name="phoneNumber">
+                                </li>
+                                <li>
+                                    <label for="email"> E-mail: </label>
+                                    <input type="text" id="email" name="emailaddress">
+                                </li>
+                                <li>
+                                    <label for="address"> Address: </label>
+                                    <input type="text" id="address" name="address">
+                                </li>
+                                <li>
+                                    <label for="city"> City: </label>
+                                    <input type="text" id="city" name="city">
+                                </li>
+                                <li>
+                                    <label for="state"> State: </label>
+                                    <input type="text" id="state" name="state">
+                                </li>
+                                <li>
+                                    <label for="zip"> Zip: </label>
+                                    <input type="text" id="zip" name="zip">
+                                </li>
+                                <li>
+                                    <label for ="question">Questions or Comments:<br></label>
+                                    <textarea id="question" name="question" rows = "5" cols = "50"> Question or Comments Welcome</textarea>
+                                </li>
+                            </ul>
+                            <button type="submit" form="contactform">Submit</button>
+                        </fieldset>
+                    </section>
+                </form>
+            </section>  
+    </main>
+
+
+
+        <!-- Use the footer area to add webpage footer content -->
+        <footer>
+            <p> Contact me at:<a href="mailto:kmfisher@my.waketech.edu">kmfisher@my.waketech.edu</a> </p>
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

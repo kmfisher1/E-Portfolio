@@ -1,0 +1,408 @@
+  /* CSS Reset */
+	body, header, nav, main, footer, h1, div, img, ul, figure, figcaption, section, article, aside, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+	/* Style rules for box sizing applies to all elements */
+	* {
+		box-sizing: border-box;
+	}
+
+  /** Global Styles **/ 
+
+body {
+  background-color:#d7cec7;
+  color:#565656;
+  font-size: 1.0em;
+  line-height: 1.25;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  color:black;
+  font-family: "dancing script", cursive;
+  text-align: center;
+  font-size: 2.75em;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  font-family: "noto serif", serif;
+  font-size: 1.75rem;
+  text-align: center;
+}
+h3 {
+  font-size: 1.0em;
+  text-align: center;
+  font-family: "noto serif", serif;
+  text-transform:uppercase;
+}
+p {
+  font-family: "kanit", sans-serif;
+  font-size:1.0em;
+  max-width: 80%;
+}
+img {
+  width: 50%;
+  margin-right: 7px;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+input#mobile_menu {
+  display:none;
+}
+.container {
+  font-family: helvetica, arial, sans-serif;
+  max-width: 1000%;
+  margin: 0 auto;
+}
+header .hero {
+  width: 80%;
+  margin: 0 auto;
+  border: 3px solid black;
+}
+
+/* sizing of elements */
+header {
+  width: 100%;
+}
+.content {
+  width: 100%;
+}
+nav {
+  width: 100%;
+}
+aside {
+  width: 100%;
+}
+footer {
+  width:100%;
+  border-top: 2px solid black;
+}
+.map, .maptitle {
+  display: none;
+}
+
+/* Rules for Contacts Page */
+.contacts {
+  margin: 0 auto;
+  width: 80%
+}
+textarea {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  width: 100%;
+}
+legend {
+  font-weight:bold;
+}
+.contacts ul {
+  list-style-type: none; 
+  text-align: center;
+}
+.contacts ul li {
+  padding: 5px;
+}
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.address {
+  margin: 2px auto;
+  text-align:center;
+}
+.phone {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+fieldset {
+  width: 50%;
+  margin: 0 auto;
+}
+button {
+  max-width: 70px;
+  height: 30px;
+  margin: 5 auto;
+}
+.center {
+  margin: 0 auto;
+}
+
+/*Rules for Beach Pages */
+
+.fisher {
+  display: none;
+}
+
+
+/*main index rules*/
+
+.snippet {
+  clear: both;
+  margin: 24px 0;
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.thumbnail {
+  width: 75px;
+  float: left;
+  margin-right: 1em;
+}
+
+.snippet__title {
+  font-weight: 500;
+}
+aside ul li {
+  list-style-type: none;
+}
+aside ul li a {
+  text-decoration: none;
+  color: #666;
+}
+
+
+
+@media screen and (max-width: 740px) {
+ /** This is the hamburger navigation menu css**/
+
+      input#mobile_menu:checked +nav{
+        left: 0px;
+      }
+
+      input#mobile_menu:checked +nav label {
+        background-image: url(../images/menu_close.svg);
+      }
+      
+      nav {
+        width: 180px;
+        background-color: #eccdb0;
+        padding: 10px 20px 10px 25px;
+        color: #fff;
+        box-sizing: border-box;
+        position: absolute;
+        top: 50px;
+        left: -180px;
+        transition: left .6s ease-in-out;
+      }
+
+      nav a {
+        color: #76323f;
+        text-decoration: none;
+        display: block;
+        margin: 0;
+        padding: 14px 0;
+        border-top: 1px solid black;
+      }
+
+      nav a:first-of-type {
+        border-top: none;
+      }
+
+      nav label {
+        cursor: pointer;
+        display: block;
+        width: 42px;
+        height: 42px;
+        background: #702e00 url(../images/menu_open.svg) no-repeat center center;
+        background-size: 22px auto;
+        position: absolute;
+        top: 78px;
+        right: -42px;
+      }
+
+    }
+
+/** This CSS is for tablet or larger mobile devices**/    
+@media screen and (min-width: 741px) {
+
+  
+  nav a{
+    display:inline-block;
+    color: #76323f;
+    background-color: #c09f80;
+    font-size: .75em;
+    font-weight: bold;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 10px;
+  }
+
+  header h1{
+    font-size: 4.0em;
+  }
+
+  aside img {
+    padding: 0px;
+    width: 50%;
+  }
+
+  /**This is the section for CSS GRID**/
+
+ 
+  .container {
+    width: 100%;
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  nav {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+
+  header {
+    width: 100%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+
+  }
+
+  main{
+    grid-row-start:3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    display: grid;
+    width: 100;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: start;
+  } 
+
+  .content1 {
+    grid-row:1;
+    grid-column:1;
+  }
+
+  .content2 {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .upcoming {
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-bottom: 1.5px solid black;
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  aside {
+    grid-row-start:4;
+    grid-row-end: 6;
+    grid-column-start:2;
+    grid-column-end: 2;
+  }
+
+  footer {
+    grid-row-start: 6;
+    grid-column-start: 1;
+    grid-column-end:4;
+  }
+  
+  /**Grid Layout for Main-Grid location Pages**/
+  .locationitem1 {
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    grid-row:1;
+    grid-column:1;
+  }
+
+  .locationitem2 {
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    grid-row:1;
+    grid-column:2;
+  }
+  
+  .locationitemlast {
+    width: 80%;
+    margin: 30px auto;
+    margin-bottom: 10px;
+    grid-row: 1;
+    grid-column: 3;
+  }
+
+  /**Grid Layout for contact page**/
+  .contactcontent1 {
+    grid-row:1;
+    grid-column:2;
+  }
+  .contactcontent2 {
+    grid-row:2;
+    grid-column:2;
+  }
+  /**CSS changes for larger screens **/
+
+  .hero {
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid black;
+  }
+  .snippet {
+    clear: both;
+    margin: 24px 0;
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  .thumbnail {
+    width: 75px;
+    float: left;
+    margin-right: 1em;
+  }
+  
+  .snippet__title {
+    font-weight: 500;
+  }
+  .upcoming ul li{
+    list-style-type: none;
+  }
+  .upcoming ul li a {
+    text-decoration: none;
+    color: #666;
+  }
+  .map {
+    display: block;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .maptitle {
+    display: block;
+    max-width: 640px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/**This is for larger high def displays **/
+@media screen and (min-width: 1000px) {
+  .container {
+    margin: 0 auto;
+  }
+  nav a{
+    display:inline-block;
+    color: #76323f;
+    background-color: #c09f80;
+    font-size: 1em;
+    font-weight: bold;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+}
